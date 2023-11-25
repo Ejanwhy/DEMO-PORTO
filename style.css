@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cambria;
+  /* background-color: black; */
+  color: white;
+}
+
+.warna,
+.medsos,
+.fa-whatsapp,
+.fa-instagram {
+  color: yellow;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  font-size: 20px;
+  background-color: #181818;
+}
+
+main {
+  background-color: black;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu a {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.menu a:hover {
+  background-color: yellow;
+  color: black;
+}
+
+header {
+  height: 80vh;
+  background-color: black;
+}
+
+ #typing {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter 5s  infinite alternate;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+
+.text,
+.text2 {
+  text-align: justify;
+  font-size: 1.2em;
+  line-height: 1.5;
+  padding-top: 10px;
+}
+
+.text2 {
+  padding: 40px;
+}
+
+.judul,
+.judul2 {
+  font-size: 2.5em;
+  padding-bottom: 20px;
+}
+
+.judul2,
+.text3 {
+  text-align: center;
+  font-size: 1.2em;
+  padding-bottom: 30px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.thumbnail {
+  max-width: 40%;
+  padding: 30px;
+}
+
+.gambar {
+  max-width: 100%;
+  height: auto; /* Biarkan tinggi otomatis menyesuaikan proporsi */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 40px;
+}
+
+.tentang {
+  padding: 0 px 20px;
+}
+
+a {
+  /* display: inline-block; */
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.medsos a:hover {
+  color: white;
+}
+
+/* icon */
+.fa-whatsapp,
+.fa-instagram {
+  font-size: 20px;
+}
+
+.medsos {
+  padding-right: 20px;
+}
+
+#exp {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.pengalaman {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pengalaman h4 {
+  color: yellow;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.pengalaman ul {
+  list-style-type: none;
+}
+
+.pengalaman li {
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Mengatur layout grid untuk gambar-gambar */
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+/* Mengatur gambar agar tetap proporsional */
+.card img {
+  width: 100%;
+  height: 200px; /* tinggi gambar sesuai kebutuhan */
+  object-fit: cover; /* untuk menjaga proporsi gambar */
+  display: block;
+}
+
+/* Efek hover pada gambar */
+.card img:hover {
+  opacity: 0.8;
+  /* Atur efek transisi */
+  transition: opacity 0.3s ease-in-out;
+}
+
+hr {
+  margin-top: 40px;
+}
+
+footer {
+  background-color: #181818;
+  padding: 15px;
+  font-size: 1.2em;
+  text-align: center;
+}
